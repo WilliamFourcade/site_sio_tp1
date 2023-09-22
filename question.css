@@ -1,0 +1,27 @@
+
+.bouton
+{
+color:#fff;
+border:none;
+border-radius:15px;
+padding:10 20px;
+text-align:center;
+margin:10px;
+cursor:pointer;
+transition:color 0.1 ease;
+width:150px;
+
+}
+.bouton:hover{
+
+
+color:red;
+
+
+
+}
+
+
+
+
+
