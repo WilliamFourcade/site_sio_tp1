@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style_calculatrice.css">
+    <script src="javacalculatrice.js"></script>
+</head>
+<body>
+    <h1>Calculatrice</h1>
+<input type="number"  class="nombre1" placeholder="Premier chiffre" id="n1" > 
+<input type="number" class="nombre2" placeholder="Deuxième chiffre" id="n2" > 
+<br>
+<br>
+<button onclick="addition()" class="button1">+</button>
+<button onclick="soustraction()">-</button>
+<button onclick="division()">/</button>
+<button onclick="multiplication()">*</button>
+<br>
+<br>
+<button onclick="parite()" class="button2">Pariter</button>
+<button onclick="permutation()">Permuter</button>
+<br>
+<br>
+<input type="text" placeholder="Résultat" class="resultat" id="n3" readonly>
+<br>
+<input type="text" class="pairimpair" id="n4" placeholder="Parité" readonly>
+</body>
+</html>
