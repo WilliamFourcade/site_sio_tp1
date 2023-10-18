@@ -1,0 +1,37 @@
+div.div1{
+
+background-color:blue; 
+height:200px;
+width:200px;
+float: left;
+margin:10px;
+
+
+}
+
+div.div2{
+
+background-color:green;
+height:200px;
+width:200px;
+float:left;
+margin-left:20px;
+margin:10px;
+
+
+
+}
+
+div.div3{
+
+background-color: red;
+height:50px;
+width:30;
+float:left;
+margin-left:20px;
+margin:10px;
+clear:both;
+
+
+
+}
