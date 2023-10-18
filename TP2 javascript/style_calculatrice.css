@@ -1,0 +1,72 @@
+body{
+
+    background-color: gray;
+
+}
+h1{
+    text-align: center;
+}
+input.nombre1{
+
+    border:solid 2px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 25%;
+    font-size: 20px;
+
+}
+input.nombre2{
+
+    border:solid 2px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 22%;
+    font-size: 20px;
+    
+}
+button{
+
+    border: solid 2px white;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    height:50px;
+    width:100px;
+    margin-left: 5%;
+
+}
+button.button1{
+
+    margin-left: 30%;
+
+}
+button.button2{
+
+    margin-left: 40.5%;
+
+}
+input.resultat{
+    border:solid 2px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 41%;
+    font-size: 20px;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    
+
+}
+input.pairimpair{
+
+    border:solid 2px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 41%;
+    font-size: 20px;
+
+}
