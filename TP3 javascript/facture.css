@@ -1,0 +1,40 @@
+h1{
+
+    text-align: center;
+}
+div{
+
+    margin-left: 30%;
+}
+::placeholder{
+
+    color: black;
+}
+body{
+
+    background-color: pink;
+}
+button{
+
+    border: solid;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  
+  }
+  button:hover{
+
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+input{
+
+    border: solid 2px;
+    border-radius: 20px;
+    
+    
+
+}
