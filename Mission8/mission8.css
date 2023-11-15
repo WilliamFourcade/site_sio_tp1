@@ -1,0 +1,51 @@
+header{
+    border: solid;
+    text-align: center;
+    border-radius: 10px;
+}
+div.menugauche{
+    border: solid;
+    width: 25%;
+    height: 800px;
+    margin-top: 10px;
+    float: left;
+    border-radius: 10px;
+    
+}
+div.menudroite{
+    border: solid;
+    width: 73%;
+    height: 800px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+button{
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 25px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+iframe.affichage{
+    margin-right: 50px;
+    margin-top: 10px;
+    float: left;
+    
+}
+iframe.corrige{
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+}
