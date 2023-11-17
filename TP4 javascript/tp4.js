@@ -81,3 +81,51 @@ function seconnecter3(){
 
 
 }
+function ajoutligne(){
+    window.location.href="tableaudynamique.html"
+}
+
+/*function bonus(){
+    var a = prompt("Article que vous voulez");
+    var b = prompt("Prix de votre article");
+    var c = prompt("Quantité");
+    var d = (c*b);
+    alert("Le prix sera de "+d);
+    do{
+        var vrai = prompt("Voulez vous ajouté un article ? Oui/Non")
+        if(vrai=="Oui"||vrai=="oui"){
+            var article = prompt("Article que vous voulez");
+            var prix = prompt("Prix de votre article");
+            var quantite = prompt("Quantité");
+            var total=(d+(prix*quantite))
+        }
+        else{
+            alert("Erreur")
+        }
+    }
+    while(vrai=="Non"||vrai=="non")
+    alert("Vous avez pris comme article "+ a + article +" Le total est de "+ total)
+}*/
+function bonus(){
+    var testa=""
+    var total=""
+    var prixttc=0
+    do {
+        var article = prompt("Votre article");
+        var price= prompt("Le prix");
+        var qty = prompt("La quantité");
+
+        alert("Vos "+ article + " vous couterons"+ price*qty );
+        total=Number(price)*Number(qty);
+        prixttc=prixttc+total;
+        testa=testa+("Article:" + article +" <br> Prix:"+price+"euros"+"<br> Quantité:"+qty+"<br> Total:"+total+"<br>");
+        alert('Le cout total de vos article est de ' +prixttc+'euros')
+
+        next=prompt("Voulez-vous ajouter d'autres article ? Oui/Non");
+
+    }
+    while(next !="Non");
+    document.write(testa);
+    document.write("Prix TTC:"+ prixttc+" euros")
+
+}
