@@ -1,9 +1,9 @@
 function ajoutligne(){
     var tbody= document.getElementById('tbody').value;
-    var ligne= document.getElementById('ligne');
+    var ligne= document.getElementById('modeleLigne');
     var clone= ligne.cloneNode(true);
  
-    document.getElementById('tbody').insertBefore(clone,document.getElementById('ligne'));
+    document.getElementById('tbody').insertBefore(clone,document.getElementById('modeleLigne'));
  }
  function calcule(){
      var total = 0;
