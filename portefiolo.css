@@ -1,0 +1,280 @@
+/* ====== STYLE GLOBAL ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: #1e1e1e;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #00aaff;
+}
+
+/* ====== SECTIONS ====== */
+.section {
+    padding: 80px 20px;
+    min-height: 80vh;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ====== ACCUEIL ====== */
+.contenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texte {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+/* ====== PROJETS ====== */
+.conteneur-projets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.projet {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projet:hover {
+    transform: scale(1.03);
+}
+
+.projet img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projet h2 {
+    font-size: 1.6em;
+    margin: 15px 0 10px;
+}
+
+.projet p {
+    font-size: 1.2em;
+}
+
+/* ====== COMPÉTENCES ====== */
+.conteneur-competences {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carte {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.carte img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* ====== PARCOURS PROFESSIONNEL ====== */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.etape {
+    background: #444;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ====== VEILLE TECHNOLOGIQUE ====== */
+#veille {
+    background: #1a1a1a;
+    padding: 60px 20px;
+    border-radius: 8px;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media screen and (max-width: 768px) {
+    .conteneur-projets {
+        grid-template-columns: 1fr;
+    }
+
+    .conteneur-competences {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 200px;
+    }
+
+    .etape {
+        width: 90%;
+    }
+}
+/* ====== PARCOURS PROFESSIONNEL ====== */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.etape {
+    display: flex;
+    align-items: center;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    gap: 20px;
+}
+
+.etape img {
+    width: 100px; /* Taille fixe des images */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.etape h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.etape p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Responsive pour mobile */
+@media screen and (max-width: 768px) {
+    .etape {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .etape img {
+        width: 80px;
+        height: 80px;
+    }
+}
+/* ====== VEILLE TECHNOLOGIQUE ====== */
+#veille {
+    background: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.veille-intro {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Conteneur des images */
+.veille-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+/* Style des images */
+.veille-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Coupe l’image pour bien s’adapter */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.veille-images img:hover {
+    transform: scale(1.05); /* Effet zoom au survol */
+}
